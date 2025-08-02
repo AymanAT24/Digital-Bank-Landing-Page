@@ -1,0 +1,81 @@
+:root {
+  --background-linear: linear-gradient(
+    200deg,
+    hsl(136, 64%, 51%),
+    hsl(192, 69%, 51%)
+  );
+  --main-transition: 0.4s;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+body {
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+/* BTN Style For All Btns */
+.main-btn {
+  padding: 12px 30px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: var(--background-linear);
+  cursor: pointer;
+}
+.main-btn:hover {
+  opacity: 0.6;
+}
+/* BTN Style For All Btns */
+
+/* Start The Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  cursor: pointer;
+}
+.links {
+  list-style: none;
+  display: flex;
+}
+.links li {
+  margin-right: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.links li::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: var(--background-linear);
+  width: 0%;
+  height: 4px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.links li:hover,
+.links li:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+/* End The Navbar */
