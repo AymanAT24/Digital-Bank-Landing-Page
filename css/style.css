@@ -38,7 +38,7 @@ body {
   align-items: center;
   background-color: #fff;
   padding: 20px;
-  position: relative;
+  position: sticky;
   z-index: 1;
 }
 .logo {
@@ -88,18 +88,18 @@ body {
   height: 675px;
 }
 .hero-sec .description {
-  padding: 40px 130px;
+  padding: 40px 160px;
   position: relative;
   top: 90px;
 }
 .hero-sec .description h2 {
-  font-size: 42px;
+  font-size: 40px;
   margin-bottom: 24px;
-  font-weight: normal;
+  font-weight: 300;
 }
 .hero-sec .description p {
   margin-bottom: 24px;
-  font-size: 16px;
+  font-size: 14px;
   opacity: 0.5;
   font-weight: 500;
 }
@@ -120,7 +120,7 @@ body {
 /* Start Features   */
 .features {
   background-color: #f4f5f7;
-  padding: 40px 130px;
+  padding: 40px 160px;
 }
 .features .heading {
   margin-top: 60px;
@@ -153,7 +153,7 @@ body {
   font-size: 24px;
 }
 .features .features-boxs > div p {
-  font-size: 15.7px;
+  font-size: 14.8px;
   opacity: 0.5;
   line-height: 1.6;
 }
@@ -161,11 +161,12 @@ body {
 
 /* Start Latest */
 .latest {
-  padding: 40px 130px;
+  padding: 40px 160px;
   background-color: #fafafa;
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
 .latest h2 {
   font-size: 40px;
   font-weight: 300;
@@ -200,11 +201,11 @@ body {
   font-weight: 500;
   opacity: 0.7;
   margin-bottom: 16px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .latest-box .description p:nth-child(3) {
   opacity: 0.5;
-  font-size: 17px;
+  font-size: 16px;
   max-width: 800px;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -212,3 +213,50 @@ body {
   overflow: hidden;
 }
 /* End Latest */
+/* Start Footer  */
+.footer {
+  background-color: #2d314e;
+  padding: 40px 160px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+.footer .left {
+  margin-right: 14 0px;
+}
+.footer .left img {
+  margin-bottom: 40px;
+}
+.footer .left .icons i {
+  color: white;
+  margin-right: 14px;
+  font-size: 18px;
+}
+
+.middle {
+  display: flex;
+  gap: 40px;
+}
+.middle li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  font-weight: 300;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 260px;
+}
+.right .main-btn {
+  margin-bottom: 20px;
+}
+.right p {
+  opacity: 0.5;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+/* End Footer  */
